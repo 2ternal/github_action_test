@@ -11,7 +11,7 @@ class ProductsApiApplicationTests {
 
     @Test
     void contextLoads() {
-        throw new RuntimeException("펑");
+//        throw new RuntimeException("펑");
     }
 
 }
