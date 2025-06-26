@@ -5,6 +5,7 @@ services:
   grepp-web:
     container_name: grepp-web
     image: grepp-web
+#    platform: linux/amd64
     ports:
       - "80:80"
       - "443:443"
@@ -23,9 +24,10 @@ services:
       - net_2
 
   grepp-app:
-    image: grepp-app:0.3
-#    image: ghcr.io/2ternal/github_action_test:sha-20417ff
+    image: ghcr.io/2ternal/github_action_test:latest
+#    image: grepp-app:0.3
     container_name: grepp-app
+    platform: linux/amd64
     networks:
       - net_2
     depends_on:
