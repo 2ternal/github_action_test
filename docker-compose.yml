@@ -24,7 +24,8 @@ services:
 
   grepp-app:
     image: grepp-app:0.3
-    container_name: grepp-app-con
+#    image: ghcr.io/2ternal/github_action_test:sha-20417ff
+    container_name: grepp-app
     networks:
       - net_2
     depends_on:
